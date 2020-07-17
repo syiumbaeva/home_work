@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Calc</title>
+
+</head>
+<body>
+
+<h1>Calculation</h1>
+
+<form action=" " method="post">
+    {% csrf_token %}
+
+    <label>First number:</label>
+    <input type="number" name="first_number" style = "margin-left: 41px"/><br/>
+
+    <label><span>Second number:</span></label>
+    <input type="number" name="second_number" style = "margin-left: 25px; margin-top: 20px"/><br/>
+    <br/>
+    <div style = "margin-left: 130px">
+        <p style = "margin: 3px 0"><input name="act" type="radio" value="add" checked > add</p>
+        <p style = "margin: 3px 0"><input name="act" type="radio" value="subtract"> subtract</p>
+        <p style = "margin: 3px 0"><input name="act" type="radio" value="multiply"> multiply</p>
+        <p style = "margin: 3px 0"><input name="act" type="radio" value="divide" > divide</p>   
+    </div> 
+    <p style = "margin-left: 130px;" ><input type="submit" value="Calculate" style = "font-size: 18px"></p>
+  
+
+</form>
+
+
+</body>
+
+</html>
